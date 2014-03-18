@@ -57,6 +57,7 @@ Patch2:		gst-plugins-bad-0.10.23-attribute.patch
 # gw: fix for bug #36437 (paths to realplayer codecs)
 # prefer codecs from the RealPlayer package in restricted
 Patch10:	gst-plugins-bad-0.10.6-real-codecs-path.patch
+Patch11:	gstreamer-0_10-plugins-neon-0_30.patch
 
 BuildRequires:	fonts-ttf-dejavu
 #gw for checks
@@ -612,8 +613,7 @@ This is the documentation of %{name}.
 %prep
 %setup -qn %{oname}-%{version}
 %apply_patches
-#gw broken configure in 0.10.19.2
-#autoreconf -fi
+autoconf
 
 %build
 #work around broken mjpegtools headers including config.h:
