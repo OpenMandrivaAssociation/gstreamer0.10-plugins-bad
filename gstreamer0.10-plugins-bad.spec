@@ -735,6 +735,7 @@ GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1 %makeinstall_std
 %{_libdir}/gstreamer-%{api}/libgstrfbsrc.so
 %{_libdir}/gstreamer-%{api}/libgstsdl.so
 %{_libdir}/gstreamer-%{api}/libgstspeed.so
+%{_libdir}/gstreamer-%{api}/libgstteletextdec.so
 %{_libdir}/gstreamer-%{api}/libgsttrm.so
 %{_libdir}/gstreamer-%{api}/libgsttta.so
 %{_libdir}/gstreamer-%{api}/libgsty4mdec.so
