@@ -616,6 +616,8 @@ This is the documentation of %{name}.
 autoconf
 
 %build
+export CXX=g++
+export CC=gcc
 #work around broken mjpegtools headers including config.h:
 export CPPFLAGS="-I."
 %configure2_5x \
