@@ -727,6 +727,7 @@ GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1 %makeinstall_std
 %{_libdir}/gstreamer-%{api}/libgstsdi.so
 %{_libdir}/gstreamer-%{api}/libgstvideofiltersbad.so
 %{_libdir}/gstreamer-%{api}/libgstvideoparsersbad.so
+%{_libdir}/gstreamer-%{api}/libgstflite.so
 %{_libdir}/gstreamer-%{api}/libgstfreeze.so
 %{_libdir}/gstreamer-%{api}/libgsth264parse.so
 %{_libdir}/gstreamer-%{api}/libgstmodplug.so
