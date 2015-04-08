@@ -1,10 +1,13 @@
---- gst-plugins-bad-0.10.23/ext/vp8/gstvp8utils.h.orig	2015-04-08 11:38:27.462327215 +0100
-+++ gst-plugins-bad-0.10.23/ext/vp8/gstvp8utils.h	2015-04-08 11:38:37.365585868 +0100
-@@ -22,6 +22,7 @@
- 
- #include <gst/gst.h>
- #include <vpx/vpx_codec.h>
-+#include <vpx/vpx_image.h>
- 
+--- gst-plugins-bad-0.10.23/ext/vp8/gstvp8utils.h.orig	2015-04-08 11:59:33.894284205 +0100
++++ gst-plugins-bad-0.10.23/ext/vp8/gstvp8utils.h	2015-04-08 11:59:41.677273383 +0100
+@@ -26,10 +26,6 @@
  G_BEGIN_DECLS
  
+ /* Some compatibility defines for older libvpx versions */
+-#ifndef VPX_IMG_FMT_I420
+-#define VPX_IMG_FMT_I420 IMG_FMT_I420
+-#endif
+-
+ #ifndef VPX_PLANE_Y
+ #define VPX_PLANE_Y PLANE_Y
+ #endif
