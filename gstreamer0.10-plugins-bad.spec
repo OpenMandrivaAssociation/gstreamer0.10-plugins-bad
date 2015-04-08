@@ -700,7 +700,9 @@ GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1 %makeinstall_std
 %{_libdir}/gstreamer-%{api}/libgstpcapparse.so
 %{_libdir}/gstreamer-%{api}/libgstpnm.so
 %{_libdir}/gstreamer-%{api}/libgstrawparse.so
+%ifarch %{ix86} x86_64
 %{_libdir}/gstreamer-%{api}/libgstreal.so
+%endif
 %{_libdir}/gstreamer-%{api}/libgstremovesilence.so
 %{_libdir}/gstreamer-%{api}/libgstscaletempoplugin.so
 %{_libdir}/gstreamer-%{api}/libgstsdpelem.so
