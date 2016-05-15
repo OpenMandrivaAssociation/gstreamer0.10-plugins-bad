@@ -43,7 +43,7 @@
 Summary:	GStreamer Streaming-media framework plug-ins
 Name:		%{bname}-plugins-bad
 Version:	0.10.23
-Release:	9%{?extrarelsuffix}
+Release:	10%{?extrarelsuffix}
 License:	LGPLv2+ and GPLv2+
 Group:		Sound
 Url:		http://gstreamer.freedesktop.org/
@@ -73,7 +73,7 @@ BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gstreamer-plugins-base-%{api}) >= 0.10.33
 BuildRequires:	pkgconfig(gtk+-2.0)
 BuildRequires:	pkgconfig(libass)
-BuildRequires:	pkgconfig(libcdaudio)
+#BuildRequires:	pkgconfig(libcdaudio)
 BuildRequires:	pkgconfig(libmimic)
 BuildRequires:	pkgconfig(libmodplug)
 BuildRequires:	pkgconfig(libmusicbrainz)
@@ -719,7 +719,7 @@ GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1 %makeinstall_std
 %{_libdir}/gstreamer-%{api}/libgstvideosignal.so
 %{_libdir}/gstreamer-%{api}/libgstvmnc.so
 %{_libdir}/gstreamer-%{api}/libgstbz2.so
-%{_libdir}/gstreamer-%{api}/libgstcdaudio.so
+#%{_libdir}/gstreamer-%{api}/libgstcdaudio.so
 %{_libdir}/gstreamer-%{api}/libgstcdxaparse.so
 %{_libdir}/gstreamer-%{api}/libgstdecklink.so
 %{_libdir}/gstreamer-%{api}/libgstfieldanalysis.so
