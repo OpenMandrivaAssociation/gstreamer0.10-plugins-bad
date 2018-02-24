@@ -64,6 +64,7 @@ BuildRequires:	fonts-ttf-dejavu
 #gw for checks
 BuildRequires:	gstreamer%{api}-plugins-good
 BuildRequires:	bzip2-devel
+BuildRequires:	wildmidi-devel
 #gw for autoreconf
 BuildRequires:	gettext-devel
 BuildRequires:	pkgconfig(check)
