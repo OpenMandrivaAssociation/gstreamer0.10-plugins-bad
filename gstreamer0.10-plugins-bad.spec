@@ -614,7 +614,7 @@ This is the documentation of %{name}.
 
 %prep
 %setup -qn %{oname}-%{version}
-%apply_patches
+%autopatch -p1
 autoconf
 
 %build
