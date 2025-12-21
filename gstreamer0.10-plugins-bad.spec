@@ -60,6 +60,11 @@ Patch10:	gst-plugins-bad-0.10.6-real-codecs-path.patch
 Patch11:	gstreamer-0_10-plugins-neon-0_30.patch
 Patch12:	gst-plugins-bad-0.10.23-vpx1.4.patch
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	fonts-ttf-dejavu
 #gw for checks
 BuildRequires:	gstreamer%{api}-plugins-good
